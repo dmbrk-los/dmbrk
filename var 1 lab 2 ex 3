@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+float t,x,y,z;
+printf ("Введіть значення х: ");
+scanf ("%f", &x);
+printf ("Введіть значення y: ");
+scanf ("%f", &y);
+printf ("Введіть значення z: ");
+scanf ("%f", &z);
+t=(1+z)*(x+y/z)/(x-(1/(1+x*x)));
+printf ("Вiдповiдь: ");
+printf ("%f",t);
+}
