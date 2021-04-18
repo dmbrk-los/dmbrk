@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+int a,b,c;
+printf ("Введiть значення а:\n ");
+scanf ("%d", &a);
+printf ("Введiть значення b:\n ");
+scanf ("%d", &b);
+c=a/b;
+printf ("Вiдповiдь: ");
+printf ("%d",c);
+}
