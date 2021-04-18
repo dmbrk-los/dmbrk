@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+float a,b,c,y;
+a=20;
+b=-10;
+c=0;
+y=(a+b*c)/(2*a-b-c)+a/(b+2);
+printf ("Вiдповiдь: ");
+printf ("%f",y);
+}
