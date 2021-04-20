@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+int x,y,z;
+float a;
+printf("Input x: ");
+    
+while (scanf("%d", &x) != 1 && getchar() != '\n' || x<0) {        
+      printf("Please, input correct value x (digit): ");
+    }
+printf("Input y: ");
+    
+while (scanf("%d", &y) != 1 && getchar() != '\n' || y<0) {        
+      printf("Please, input correct value y (digit): ");
+    }
+printf("Input z: ");
+    
+while (scanf("%d", &z) != 1 && getchar() != '\n' || sqrt (y)-2*sqrt(z*x)<0) {        
+      printf("Please, input correct value z (digit): ");
+    }
+printf("Your input is correct! ");
+a=(sqrt(x)+2*sqrt(z*y))/(sqrt (y)-2*sqrt(z*x));
+printf ("result - %f",a);
+
+    return 0;
+}
