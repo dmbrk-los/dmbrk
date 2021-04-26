@@ -1,0 +1,46 @@
+#include <stdio.h>
+int main()
+{
+    int n;
+    printf ("введіть n");
+    scanf("%d",&n);
+    int a[n],min=0,max=0,k=1,s=0;
+    printf ("введіть масив");
+    for (int i=0; i<n; i++)
+    {
+        scanf ("%d",&a[i]);
+        if (a[i]<0)
+        {
+            s+=a[i];
+        }
+        if (a[i]<a[min])
+        {
+            min=i;
+        }
+        if (a[i]>a[max])
+        {
+            max=i;
+        }
+    }
+    printf ("\nмінімальне число -> %d \nмаксимальне число -> %d",a[min], a[max]);
+    if (min>max)
+    {
+        for (int i=max+1; i<min; i++)
+        {
+            k=k*a[i];
+        }
+    }
+    else 
+    {
+        for (int i=min+1; i<max; i++)
+        {
+            k=k*a[i];
+        }
+    }
+    if (k==1)
+    {
+        printf ("помилка"); 
+        return 0;
+    }
+    printf ("\nсумма від*ємних елементів масиву - %d \nдобуток елементів масиву,розташованих між максимальним і мінімальним елементами - %d",s,k);
+}
